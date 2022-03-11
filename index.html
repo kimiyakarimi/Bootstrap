@@ -1,83 +1,231 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html dir="rtl" lang="fa">
 <head>
-<title>Success Script | اسکریپت موفقیت</title>
-<link href="logo.png" rel="icon" />
-<link href="proj-css-file.css" rel="stylesheet"/>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">-->
-<script type="text/javascript">
-var body_bg ="linear-gradient(45deg, rgba(216,255,222,1) 10%, rgba(211,227,255,1) 90%)";
-var button1_bg = "linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%)";
-var button2_bg = "linear-gradient(-45deg, #1CB5E0 0%, #000851 100%)";
-var button3_bg = "linear-gradient(90deg, #9ebd13 0%, #008552 100%)";
-var button4_bg = "linear-gradient(-45deg, #d53369 0%, #daae51 100%)";
-
-$("a.button").on("mouseover", function () {
-	$(".logo").addClass("white");
-	$(".logo h3").css("color", "white");
-	$(".intro h3").css("color", "white");
-	if ($(this).hasClass("button-1")) {
-		$("body").css("background", button1_bg);
-		$(".some-stuff").addClass("show");
-	}
-	if ($(this).hasClass("button-2")) {
-		$("body").css("background", button2_bg);
-		$(".other-stuff").addClass("show");
-	}
-	if ($(this).hasClass("button-3")) {
-		$("body").css("background", button3_bg);
-		$(".more-stuff").addClass("show");
-	}
-	if ($(this).hasClass("button-4")) {
-		$("body").css("background", button4_bg);
-		$(".rare-stuff").addClass("show");
-	}
-});
-
-$(".button").on("mouseout", function () {
-	$("body").css("background", body_bg);
-	$(".logo").removeClass("white");
-	$(".logo h3").css("color", "#444");
-	$(".intro h3").css("color", "#444");
-	$(".some-stuff").removeClass("show");
-	$(".other-stuff").removeClass("show");
-	$(".more-stuff").removeClass("show");
-	$(".rare-stuff").removeClass("show");
-});
-
-</script>
+    <meta charset="utf-8">
+    <title>Success Script | اسکریپت موفقیت</title>
+    <link rel="icon" href="icon.png">
+    <link href="style.css" rel="stylesheet">
+    <script src="jsfile.js" async></script>
+    <link href="https://s.7learn.com/themes/slt/assets/build/css/front10.min.css" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">-->
 </head>
 <body>
-
-  <div class="logo"> 
-    <h3>اسکریپت موفقیت را از ما بخواهید<img src="logo.png" width="5%"</h3>
-  </div>
-  <div class="intro">
-    <h4>اسکریپت موفقیت</h4>
-  </div>
-  <div class="panel some-stuff">
-    <h2>دوره های آموزشی</h2>
-  </div>
-  <div class="panel other-stuff">
-    <h2>مقالات آموزشی</h2>
-  </div>
-  <div class="panel more-stuff">
-    <h2>راهنمای سایت</h2>
-  </div>
-  <div class="panel rare-stuff">
-    <h2>درباره ی ما</h2>
-  </div>
-  <nav>
-    <a class="button button-1" href="course.html"><h1>01</h1><span>دوره های آموزشی</span></a>
-    <a class="button button-2" href="article.html"><h1>02</h1><span>مقالات آموزشی</span></a>
-    <a class="button button-3" href="help.html"><h1>03</h1><span>راهنمای سایت</span></a>
-    <a class="button button-4" href="aboutus.html"><h1>04</h1><span>درباره ی ما</span></a>
-  </nav>
+<nav class="cmp-navbar navbar-expand-lg" id="cmp-navbar">
+    <form action="https://kimiyakarimi.github.io/Bootstrap" data-ajax-action='https://kimiyakarimi.github.io/Bootstrap' class="container"
+        id="navbar-search">
+        <div class="cmp-field cmp-field-search cmp-field-lg cmp-live-search" id="navbar-search-input">
+            <input type="text" id="si" name="s" class='live-search' placeholder="متن جستجو"autocomplete="off">
+            <i class="fa fa-times close"></i>
+            <div class="cmp-results cmp-results-shadow"></div>
+        </div>
+    </form>
+    <div class="container">
+        <a class="navbar-brand d-none d-lg-flex" href="https://kimiyakarimi.github.io/Bootstrap">
+            <img src="icontext.png" alt="اسکریپت موفقیت">
+        </a>
+        <div class="collapse navbar-collapse" id="mega-menu">
+            <button class="navbar-toggler close-btn" type="button" data-bs-toggle="collapse"data-bs-target="#mega-menu">
+                <span class="fas fa-times"></span>
+            </button>
+            <a href="https://kimiyakarimi.github.io/Bootstrap/course">دوره های آموزشی</a>
+            <a href="https://kimiyakarimi.github.io/Bootstrap/article">مقالات آموزشی</a>
+            <a href="https://kimiyakarimi.github.io/Bootstrap/help">راهنمای سایت</a>
+            <a href="https://kimiyakarimi.github.io/Bootstrap/aboutus">درباره ی ما</a>
+        </div>
+        <div class="left">
+            <div class="btn-group btn-success">
+                <button type="button" class="btn btn-info"><a href=https://kimiyakarimi.github.io/Bootstrap/login">ورود</a></button>
+                <button type="button" class="btn btn-info"><a href="https://kimiyakarimi.github.io/Bootstrap/register">عضویت</a></button>
+            </div>
+            <span class="btn btn-light fas fa-search" id="search-open"></span>
+        </div>
+    </div>
+</nav>
+    <div class="index-page">
+        <header>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-xl-6">
+                        <h1>دوره های آموزشی برای <br/>علاقه مندان به برنامه نویسی</h1>
+                        <span>ما در اسکریپت موفقیت دوره‌های آموزشی حضوری و غیرحضوری برنامه نویسی به زبان های مختلف را برگزار می کنیم.برای پیمودن مسیر رسیدن به موفقیت با ما همراه شوید.</span>
+                        <div>
+                            <a href="https://kimiyakarimi.github.io/Bootstrap/course" class="cmp-btn-def btn btn-success">همین حالا شروع کن</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-xl-6 d-lg-block d-none">
+                        <div class="row justify-content-end">
+                            <div class="col-xl-8 col-lg-10">
+                                <div class="sharp-corners-cover">
+                                    <div class="sharp-corners">   
+                                    </div>
+                                    <img src="programmer.png" alt="programmer" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="container">
+            <h2>با چه زبان هایی می تونم شروع کنم؟</h2>
+            <span>با شروع دوره ی آموزشی مورد علاقتون آینده ی درخشان در انتظار شماست.<br/>الان وقتشه که توی مسیر روشن قدم بردارید.</span>
+            <div class="row g-xl-5 g-sm-4 g-2  justify-content-center">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-6 , squaretext">
+                    <a href="https://kimiyakarimi.github.io/Bootstrap/course" class="smooth-corners skill">
+                        <div>
+                            <div class="smooth-corners">
+                                <div class="fas fa-code" style="background: linear-gradient(45deg, red 0% , blue 100%); color: white">
+                                </div>
+                            </div>
+                            <h3>سی پلاس پلاس</h3>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 , squaretext">
+                    <a href="https://kimiyakarimi.github.io/Bootstrap/course" class="smooth-corners skill">
+                        <div>
+                            <div class="smooth-corners">
+                                <div class="fas fa-code" style="background: linear-gradient(45deg, green 0%, yellow 100%); color: white">
+                                </div>
+                            </div>
+                            <h3>پایتون</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 , squaretext">
+                    <a href="https://kimiyakarimi.github.io/Bootstrap/course" class="smooth-corners skill">
+                        <div>
+                            <div class="smooth-corners">
+                                <div class="fas fa-code" style="background: linear-gradient(45deg,magenta 0%, aqua 100%);color: white">
+                                </div>
+                            </div>
+                            <h3>جاوا</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 , squaretext">
+                    <a href="https://kimiyakarimi.github.io/Bootstrap/course" class="smooth-corners skill">
+                        <div>
+                            <div class="smooth-corners">
+                                <div class="fas fa-code" style="background: linear-gradient(45deg, orange 0%, darkgrey 100%); color: white;">
+                                </div>
+                            </div>
+                            <h3>سی شارپ</h3>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 , squaretext">
+                    <a href="https://kimiyakarimi.github.io/Bootstrap/course" class="smooth-corners skill">
+                        <div>
+                            <div class="smooth-corners">
+                                <div class="fas fa-code" style="background: linear-gradient(45deg, purple 0%, pink 100%); color: white">
+                                </div>
+                            </div>
+                            <h3>کاتلین</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 , squaretext">
+                    <a href="https://kimiyakarimi.github.io/Bootstrap/course" class="smooth-corners skill">
+                        <div>
+                            <div class="smooth-corners">
+                                <div class="fas fa-code" style="background: linear-gradient(45deg, lime 0%, aqua 100%)">
+                                </div>
+                            </div>
+                            <h3>سویفت</h3>
+                        </div>
+                    </a>
+                </div>
+        </section>
+        <section>
+        <!--<img src="study.jpg" width="100%" alt="studying">-->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 , player-box" data-cmp-modal="modal-video">
+                    <img src="study.jpg" id="studyimg" alt="studying">
+                </div>
+                <div class="col-lg-7 col-md-8" style="text-align: center;margin-top: 50px;">
+                    <h2><img src="icon.png" width="5%">ویژگی هایی که این وب سایت را برجسته می کنه:</h2>
+                    <div class="items" style="text-align: center;">
+                <p>آموزش های به روز</p>
+                <p>ارائه مدرک معتبر</p>
+                <p>ارزیابی مستمر در طول دوره ی آموزشی</p>
+                <p>پرسش و پاسخ بدون محدودیت</p>
+                <p>حفظ حریم شخصی کاربران</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row g-sm-4 g-2 justify-content-center">
+                        <div class="col">
+                            <a href="https://kimiyakarimi.github.io/Bootstrap/conference" class="smooth-corners skill">
+                                <div>
+                                    <div class="smooth-corners">
+                                        <div class="far fa-search">
+                                        </div>
+                                    </div>
+                                    <h3>همایش ها</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://kimiyakarimi.github.io/Bootstrap/article" class="smooth-corners skill">
+                                <div>
+                                    <div class="smooth-corners">
+                                        <div class="far fa-newspaper">
+                                        </div>
+                                    </div>
+                                    <h3>مقالات</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://kimiyakarimi.github.io/Bootstrap/podcast" class="smooth-corners skill">
+                                <div>
+                                    <div class="smooth-corners">
+                                        <div class="far fa-microphone-alt">
+                                        </div>
+                                    </div>
+                                    <h3>پادکست ها</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://kimiyakarimi.github.io/Bootstrap/faq" class="smooth-corners skill">
+                                <div>
+                                    <div class="smooth-corners">
+                                        <div class="far fa-books">
+                                        </div>
+                                    </div>
+                                    <h3>پرسش های متداول</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+            <div style="text-align: center;">
+                <span>
+                    <h4>تلفن تماس :  021224654980</h4>
+                    <h4>ایمیل پشتیبانی: SuccessScript1400@gmail.com</h4>
+                    <h4>ما را در شبکه های مجازی هم دنبال کنید.</h4>
+                    <a href="https://t.me/SuccessScript" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1024px-Telegram_logo.svg.png" width="2%"></a>
+                    <a href="https://www.instagram.com/SuccessScript" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" width="2%"></a>
+                </span>
+            </div>
+            <br/>
+    </div>
+<a href="#top" id="goToTop" title="Go to top" style="color:rgb(255, 255, 255); background-color: rgb(245, 6, 173);"></a>
+</script>
 </body>
 </html>
-
-
-
